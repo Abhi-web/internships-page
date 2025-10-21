@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.root-gradient {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(10,30,60,0.6), transparent 10%),
+              linear-gradient(180deg, #001a33 0%, #00060a 60%, #000000 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  text-align: left;
+  padding: 36px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+  color: #e6f7ff;
+  backdrop-filter: blur(6px) saturate(120%);
+}
+
+.logo {
+  width: 96px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.6));
+}
+
+.kicker {
+  color: #9ed8ff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.instruction {
+  font-size: 0.95rem;
+  color: #bcdff6;
+}
+
+h1 {
+  margin: 6px 0 18px 0;
+  font-size: 2.4rem;
+  color: #f2fcff;
+  text-shadow: 0 6px 18px rgba(2,18,40,0.6);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.012), rgba(0,0,0,0.12));
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 0.28s cubic-bezier(.2,.9,.2,1), box-shadow 0.28s ease;
+  border: 1px solid rgba(255,255,255,0.03);
+  min-height: 170px;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(2,8,20,0.65);
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  color: #eaf8ff;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  list-style-type: none;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #bbdff6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: linear-gradient(90deg, #00a3ff, #0077d6);
+  color: #051225;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0,110,200,0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0,110,200,0.28);
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #cfeaff;
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(255,255,255,0.02);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Detail page tweaks */
+.container p {
+  color: #cfeeff;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+ul li strong { color: #eafff0; }
